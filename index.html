@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Telephone Number Validator</title>
+</head>
+
+<body>
+    <main>
+        <h2 id="author-name">Thanh Toan Tu</h2>
+        <h1 id="title">Telephone Number Validator</h1>
+        <div class="validator-container">
+            <div class="phone-container">
+                <div class="phone-header">
+                    <div class="phone-camera"></div>
+                </div>
+                <label id="input-label" for="user-input">Enter a Phone Number:</label>
+                <input id="user-input" type="text" maxlength="20" placeholder="11111111111111111111" />
+                <div class="phone-numpad">
+                    <button class="numpad-btn" id="num1">1</button>
+                    <button class="numpad-btn" id="num2">2</button>
+                    <button class="numpad-btn" id="num3">3</button>
+                    <button class="numpad-btn" id="num4">4</button>
+                    <button class="numpad-btn" id="num5">5</button>
+                    <button class="numpad-btn" id="num6">6</button>
+                    <button class="numpad-btn" id="num7">7</button>
+                    <button class="numpad-btn" id="num8">8</button>
+                    <button class="numpad-btn" id="num9">9</button>
+                    <button class="numpad-btn" id="open-parenthesis">(</button>
+                    <button class="numpad-btn" id="num0">0</button>
+                    <button class="numpad-btn" id="close-parenthesis">)</button>
+                </div>
+                <div class="phone-footer">
+                    <button id="check-btn" type="button" class="footer-btn">Check</button>
+                    <button id="clear-btn" type="button" class="footer-btn">Clear</button>
+                </div>
+            </div>
+            <div id="results-div">
+                <h3 class="resutls-title">Results:</h3>
+                <div class="results-texts">
+                    <p class="results-text">Invalid US number: 555-5555</p>
+                    <p class="results-text">Valid US number: 1(555)555-5555</p>
+                    <p class="results-text">Invalid US number: 555-5555</p>
+                    <p class="results-text">Valid US number: 1(555)555-5555</p>
+                    <p class="results-text">Invalid US number: 555-5555</p>
+                    <p class="results-text">Valid US number: 1(555)555-5555</p>
+                    <p class="results-text">Invalid US number: 555-5555</p>
+                    <p class="results-text">Valid US number: 1(555)555-5555</p>
+                    <p class="results-text">Invalid US number: 555-5555</p>
+                    <p class="results-text">Valid US number: 1(555)555-5555</p>
+                    <p class="results-text">Invalid US number: 555-5555</p>
+                    <p class="results-text">Valid US number: 1(555)555-5555</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
