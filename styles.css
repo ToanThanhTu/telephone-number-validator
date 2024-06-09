@@ -133,7 +133,7 @@ button:hover {
     cursor: pointer;
 }
 
-#results-div {
+#results-area {
     text-align: left;
     border-radius: 10px;
     border: 20px solid;
@@ -141,7 +141,7 @@ button:hover {
     background-color: var(--magnolia);
 }
 
-.results-texts {
+#results-div {
     overflow-y: auto;
     height: 300px;
     margin-top: 20px;
