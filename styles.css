@@ -150,7 +150,7 @@ button:hover {
 }
 
 /* Result container styling */
-#results-div {
+#results-area {
     text-align: left;
     border-radius: 10px;
     border: 20px solid;
@@ -159,8 +159,8 @@ button:hover {
 }
 
 /* Result texts container styling */
-.results-texts {
-    overflow-y: auto; /* enable vertical scrolling */
+#results-div {
+    overflow-y: auto;
     height: 300px;
     margin-top: 20px;
     background-color: white;
