@@ -12,13 +12,23 @@
     <main>
         <h2 id="author-name">Thanh Toan Tu</h2>
         <h1 id="title">Telephone Number Validator</h1>
+
+        <!-- Container for the validator interface -->
         <div class="validator-container">
+
+            <!-- Phone illustration container -->
             <div class="phone-container">
+
+                <!-- Phone's top part with camera illustration -->
                 <div class="phone-header">
                     <div class="phone-camera"></div>
                 </div>
+
+                <!-- Input field and labor for phone number -->
                 <label id="input-label" for="user-input">Enter a Phone Number:</label>
                 <input id="user-input" type="text" maxlength="20" placeholder="11111111111111111111" />
+
+                <!-- Numpad for entering the phone number -->
                 <div class="phone-numpad">
                     <button class="numpad-btn" id="num1">1</button>
                     <button class="numpad-btn" id="num2">2</button>
@@ -33,11 +43,19 @@
                     <button class="numpad-btn" id="num0">0</button>
                     <button class="numpad-btn" id="close-parenthesis">)</button>
                 </div>
+
+                <!-- Phone Footer buttons for actions -->
                 <div class="phone-footer">
+
+                    <!-- Button to check the validity -->
                     <button id="check-btn" type="button" class="footer-btn">Check</button>
+
+                    <!-- Button to clear the input -->
                     <button id="clear-btn" type="button" class="footer-btn">Clear</button>
                 </div>
             </div>
+
+            <!-- Validation results container -->
             <div id="results-div">
                 <h3 class="results-title">Results:</h3>
                 <div class="results-texts"></div>

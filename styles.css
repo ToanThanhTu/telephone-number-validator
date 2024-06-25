@@ -1,3 +1,4 @@
+/* Define color scheme and theme variables */
 :root {
     --phone-color: black;
     --phone-background: #F5F0F6;
@@ -8,26 +9,30 @@
     --body-background: #385F71;
 }
 
+/* Reset padding, margin, and box-sizing for all elements */
 *,
 *::before,
 *::after {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
-    /* border: 0.5px solid black; */
+    /* border: 0.5px solid black; */ /* Debugging border, currently disabled */
 }
 
+/* Set base font size and family for the document */
 html {
     min-width: 300px;
     font-family: Courier New, Arial, sans-serif;
-    font-size: 62.5%;
+    font-size: 62.5%; /* set HTML font size to 10px */
 }
 
+/* Apply box-sizing and font size to body */
 body {
     box-sizing: border-box;
     font-size: 1.6rem;
 }
 
+/* Ensure html and body fill the viewport height */
 html,
 body {
     height: 100%;
@@ -37,6 +42,7 @@ body {
     background-color: var(--body-background);
 }
 
+/* Center main content and align items */
 main {
     text-align: center;
     display: flex;
@@ -55,11 +61,13 @@ main {
     color: var(--magnolia)
 }
 
+/* Flex layout for the validator container */
 .validator-container {
     display: flex;
     gap: 20px;
 }
 
+/* Style for the phone illustration container */
 .phone-container {
     width: 250px;
     min-width: 250px;
@@ -68,6 +76,7 @@ main {
     background-color: var(--magnolia);
 }
 
+/* Style for the phone's top part */
 .phone-header {
     background-color: var(--phone-color);
     display: flex;
@@ -76,6 +85,7 @@ main {
     height: 30px;
 }
 
+/* Style for the phone's camera illustration */
 .phone-camera {
     width: 10px;
     height: 10px;
@@ -83,6 +93,7 @@ main {
     background-color: var(--magnolia);
 }
 
+/* Style for the input label and input field */
 #input-label,
 #user-input {
     line-height: 3;
@@ -99,6 +110,7 @@ main {
     border-radius: 10px;
 }
 
+/* Grid layout 3x4 for the phone's numpad */
 .phone-numpad {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -108,18 +120,21 @@ main {
     row-gap: 5px;
 }
 
+/* Style for each numpad button */
 .numpad-btn {
     height: 50px;
     width: 50px;
     border-radius: 50px;
 }
 
+/* Style for the phone's footer section */
 .phone-footer {
     background-color: var(--phone-color);
     margin-top: 20px;
     height: 40px;
 }
 
+/* Style for the footer buttons (Check and Clear) */
 .footer-btn {
     font-weight: 600;
     line-height: 2;
@@ -129,10 +144,12 @@ main {
     border: 1px solid var(--magnolia);
 }
 
+/* Pointer cursor hover effect for all buttons */
 button:hover {
     cursor: pointer;
 }
 
+/* Result container styling */
 #results-div {
     text-align: left;
     border-radius: 10px;
@@ -141,19 +158,22 @@ button:hover {
     background-color: var(--magnolia);
 }
 
+/* Result texts container styling */
 .results-texts {
-    overflow-y: auto;
+    overflow-y: auto; /* enable vertical scrolling */
     height: 300px;
     margin-top: 20px;
     background-color: white;
     border: 2px solid;
 }
 
+/* individual result text styling */
 .results-text {
     padding: 5px;
     font-weight: 600;
 }
 
+/* Responsive web design styling */
 @media (max-width: 550px) {
     .validator-container {
         display: block;
