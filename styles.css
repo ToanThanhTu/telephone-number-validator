@@ -173,6 +173,18 @@ button:hover {
     font-weight: 600;
 }
 
+footer {
+    margin-top: 50px;
+    color: var(--magnolia);
+    text-align: center;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+footer a {
+    color: chocolate;
+}
+
 /* Responsive web design styling */
 @media (max-width: 550px) {
     .validator-container {
